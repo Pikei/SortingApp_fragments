@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
         dataInputButton.setOnClickListener {
             replaceFragment(UserInput())
         }
-
     }
 
     private fun  getNumbers(): IntArray {
@@ -63,6 +62,4 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.replace(R.id.fragmentContainerView, fragment).setReorderingAllowed(true)
         fragmentTransaction.commit()
     }
-
-
 }
